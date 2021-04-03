@@ -300,5 +300,6 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         await ctx.send("명령어를 찾지 못했습니다. !도움을 입력하여 명령어를 확인하세요.")
 
-bot.run('ODI3NTU1ODI0NDAyMDM4ODA1.YGcvaw.Pf8zlaolKbWfwfZ7mElAcUo-aIY')
+acces_token = os.environ["Bot Token"]
+bot.run(acces_token)
 
